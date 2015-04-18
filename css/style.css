@@ -419,6 +419,7 @@ body {
   cursor: pointer;
 }
 .main-nav-link {
+  color: #4d4d4d;
   font-weight: 300;
   letter-spacing: 1px;
 }
