@@ -1,5 +1,5 @@
 # Header
-subtitle: 如果有一天你忘了自己为何会来到这里，你还在这，这就是你努力下去的原因
+subtitle: 如果有一天你忘记你最初为什么会来到这里，你现在还在这，这就是你要努力下去的原因
 menu:
   Home: /
   Archives: /archives
@@ -17,6 +17,7 @@ widgets:
 - tagcloud
 - archive
 - recent_posts
+- weibo
 
 # Miscellaneous
 google_analytics:
