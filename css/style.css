@@ -629,10 +629,13 @@ a.article-title:hover {
   padding: 10px 0;
 }
 .article-entry blockquote {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.4em;
-  margin: 1.6em 20px;
-  text-align: center;
+/*font-family: font-serif*/
+/*font-size: 1.4em*/
+/*margin: line-height 20px*/
+/*text-align: center*/
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
 }
 .article-entry blockquote footer {
   font-size: 14px;
@@ -743,6 +746,9 @@ a.article-title:hover {
   content: "\f064";
   font-family: FontAwesome;
   padding-right: 6px;
+}
+.article-share-links {
+  margin-left: 15px;
 }
 #article-nav {
   position: relative;
