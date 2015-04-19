@@ -12,12 +12,9 @@ fancybox: true
 # Sidebar
 sidebar: left
 widgets:
-- category
-- tag
-- tagcloud
-- archive
-- recent_posts
 - weibo
+- tag
+- recent_posts
 
 # Miscellaneous
 google_analytics:
