@@ -1,6 +1,7 @@
 title: "markdown语法"
 date: 2015-04-17 22:42:34
 tags:
+toc: false
 ---
 ##Strong and Emphasize
 ```
