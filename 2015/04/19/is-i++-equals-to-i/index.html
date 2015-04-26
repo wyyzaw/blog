@@ -12,8 +12,7 @@ while(i&amp;lt;arr.length){
 写成了
 while(i&amp;lt;arr.length){
     arr[i++] = tmp[i];
-}
-导致了数组越界异常，当时觉得很奇怪，以前上课的时候老师不是说i++的意思就是执行完当前操作再自增吗？这样的话arr[i++] = tmp[i]和arr">
+}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="i++ == i?">
 <meta property="og:url" content="http://blog.sarielhu.tk/2015/04/19/is-i++-equals-to-i/index.html">
@@ -25,9 +24,8 @@ while(i&amp;lt;arr.length){
 写成了
 while(i&amp;lt;arr.length){
     arr[i++] = tmp[i];
-}
-导致了数组越界异常，当时觉得很奇怪，以前上课的时候老师不是说i++的意思就是执行完当前操作再自增吗？这样的话arr[i++] = tmp[i]和arr">
-<meta property="og:image" content="/css/image/is-i++-equals-to-i/1.jpg">
+}">
+<meta property="og:image" content="/css/images/is-i++-equals-to-i/1.jpg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="i++ == i?">
 <meta name="twitter:description" content="研究这个问题的原因是我在一次写循环的时候，把
@@ -37,8 +35,7 @@ while(i&amp;lt;arr.length){
 写成了
 while(i&amp;lt;arr.length){
     arr[i++] = tmp[i];
-}
-导致了数组越界异常，当时觉得很奇怪，以前上课的时候老师不是说i++的意思就是执行完当前操作再自增吗？这样的话arr[i++] = tmp[i]和arr">
+}">
   
     <link rel="alternative" href="/atom.xml" title="晓鱼塘" type="application/atom+xml">
   
@@ -119,7 +116,8 @@ while(i&amp;lt;arr.length){
 <pre><code><span class="keyword">while</span>(i&lt;arr.length)<span class="comment">{
     arr[i++] = tmp[i];
 }</span>
-</code></pre><p>导致了数组越界异常，当时觉得很奇怪，以前上课的时候老师不是说i++的意思就是执行完当前操作再自增吗？这样的话<code>arr[i++] = tmp[i]</code>和<code>arr[i] = tmp[i++]</code>不是应该等价的吗？而且等号的计算不是应该先算右边的嘛？当时就凌乱了，于是去oracle官网翻了翻官方文档，发现上面是这样写的</p>
+</code></pre><a id="more"></a>
+<p>导致了数组越界异常，当时觉得很奇怪，以前上课的时候老师不是说i++的意思就是执行完当前操作再自增吗？这样的话<code>arr[i++] = tmp[i]</code>和<code>arr[i] = tmp[i++]</code>不是应该等价的吗？而且等号的计算不是应该先算右边的嘛？当时就凌乱了，于是去oracle官网翻了翻官方文档，发现上面是这样写的</p>
 <blockquote>
 <ul>
 <li>First, the left-hand operand is evaluated to produce a variable. If this evaluation completes abruptly, then the assignment expression completes abruptly for the same reason; the right-hand operand is not evaluated and no assignment occurs.  </li>
@@ -138,7 +136,7 @@ while(i&amp;lt;arr.length){
 <p>最后，写个小程序来验证一下，代码如下</p>
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">TestIncre</span> &#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">		System.<span class="keyword">out</span>.println(i++ == i);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>用javap命令来看一下这段代码的字节码</p>
-<p><img src="/css/image/is-i++-equals-to-i/1.jpg" alt="程序的字节码"></p>
+<p><img src="/css/images/is-i++-equals-to-i/1.jpg" alt="程序的字节码"></p>
 <p>其中第5-10行执行的操作顺序为</p>
 <ul>
 <li>将局部变量表slot1的值放入操作数栈-&gt;变量自增-&gt;将局部变量表slot1的值放入操作数栈-&gt;比较数值</li>
@@ -148,7 +146,7 @@ while(i&amp;lt;arr.length){
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.sarielhu.tk/2015/04/19/is-i++-equals-to-i/" data-id="ci8xuw0vd0002pyuan61chjaz" class="article-share-link">Share</a>
+      <a data-url="http://blog.sarielhu.tk/2015/04/19/is-i++-equals-to-i/" data-id="ci8xuyqwd0002qquam06wg4pr" class="article-share-link">Share</a>
       
       
       <!-- comment part -->
