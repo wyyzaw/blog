@@ -3,17 +3,42 @@
 <head>
   <meta charset="utf-8">
   
-  <title>晓鱼塘</title>
+  <title>i++ == i? | 晓鱼塘</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="如果有一天你忘了为何来到这里，你现在还在这里，这就是你努力下去的原因">
-<meta property="og:type" content="website">
-<meta property="og:title" content="晓鱼塘">
-<meta property="og:url" content="http://blog.sarielhu.tk/index.html">
+  <meta name="description" content="研究这个问题的原因是我在一次写循环的时候，把
+while(i&amp;lt;arr.length){
+    arr[i] = tmp[i++];
+}
+写成了
+while(i&amp;lt;arr.length){
+    arr[i++] = tmp[i];
+}
+导致了数组越界异常，当时觉得很奇怪，以前上课的时候老师不是说i++的意思就是执行完当前操作再自增吗？这样的话arr[i++] = tmp[i]和arr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="i++ == i?">
+<meta property="og:url" content="http://blog.sarielhu.tk/2015/04/19/is-i++-equals-to-i/index.html">
 <meta property="og:site_name" content="晓鱼塘">
-<meta property="og:description" content="如果有一天你忘了为何来到这里，你现在还在这里，这就是你努力下去的原因">
+<meta property="og:description" content="研究这个问题的原因是我在一次写循环的时候，把
+while(i&amp;lt;arr.length){
+    arr[i] = tmp[i++];
+}
+写成了
+while(i&amp;lt;arr.length){
+    arr[i++] = tmp[i];
+}
+导致了数组越界异常，当时觉得很奇怪，以前上课的时候老师不是说i++的意思就是执行完当前操作再自增吗？这样的话arr[i++] = tmp[i]和arr">
+<meta property="og:image" content="/css/image/is-i++-equals-to-i/1.jpg">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="晓鱼塘">
-<meta name="twitter:description" content="如果有一天你忘了为何来到这里，你现在还在这里，这就是你努力下去的原因">
+<meta name="twitter:title" content="i++ == i?">
+<meta name="twitter:description" content="研究这个问题的原因是我在一次写循环的时候，把
+while(i&amp;lt;arr.length){
+    arr[i] = tmp[i++];
+}
+写成了
+while(i&amp;lt;arr.length){
+    arr[i++] = tmp[i];
+}
+导致了数组越界异常，当时觉得很奇怪，以前上课的时候老师不是说i++的意思就是执行完当前操作再自增吗？这样的话arr[i++] = tmp[i]和arr">
   
     <link rel="alternative" href="/atom.xml" title="晓鱼塘" type="application/atom+xml">
   
@@ -63,9 +88,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-is-i++-equals-to-i" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-is-i++-equals-to-i" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/04/19/is-i++-equals-to-i/" class="article-date">
   <time datetime="2015-04-19T07:30:59.000Z" itemprop="datePublished">2015-04-19</time>
@@ -78,8 +101,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/19/is-i++-equals-to-i/">i++ == i?</a>
+    <h1 class="article-title" itemprop="name">
+      i++ == i?
     </h1>
   
 
@@ -128,154 +151,33 @@
       <a data-url="http://blog.sarielhu.tk/2015/04/19/is-i++-equals-to-i/" data-id="ci8xuw0vd0002pyuan61chjaz" class="article-share-link">Share</a>
       
       
+      <!-- comment part -->
+      <!-- UY BEGIN -->
+      <div id="uyan_frame"></div>
+        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2024309"></script>
+      <!-- UY END -->
+      
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/碎片/">碎片</a></li></ul>
 
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-birth-of-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/19/birth-of-blog/" class="article-date">
-  <time datetime="2015-04-19T07:30:59.000Z" itemprop="datePublished">2015-04-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/19/birth-of-blog/">博客诞生记</a>
-    </h1>
+    <a href="/2015/04/19/birth-of-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">博客诞生记</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="背景">背景</h2><p>又是一个单身狗的周末，本来打算是看看公演堕落堕落两天就过去了。结果临到出门之前又懒癌发作不想动（=_=!）<br>就试着在群里原价叫卖门票，正巧遇上个迫不及待想去见见四期生的聚聚，结果就是在开演前的8小时把辛辛苦苦守了两天抢到的门票原价转卖了（我碎成渣渣的黄牛心啊….）<br>既然不去堕落了，那想着就找点事做吧~一直以来都觉得自己好歹是个未来的程序猿，连个技术博客都没有也太寒酸了，正巧周末无聊，就弄个玩玩吧。<br>
-        
-          <p class="article-more-link">
-            <a href="/2015/04/19/birth-of-blog/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.sarielhu.tk/2015/04/19/birth-of-blog/" data-id="ci8xuw0vn0008pyuad0yy9umc" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/寂寞的周末/">寂寞的周末</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
 
-
-  
-    <article id="post-markdown-gramma" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/17/markdown-gramma/" class="article-date">
-  <time datetime="2015-04-17T14:42:34.000Z" itemprop="datePublished">2015-04-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/17/markdown-gramma/">markdown语法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Strong_and_Emphasize">Strong and Emphasize</h2><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">*</span>emphasize<span class="keyword">*</span>   <span class="keyword">*</span><span class="keyword">*</span>strong<span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line">_emphasize_   __strong__</span><br></pre></td></tr></table></figure>
-        
-          <p class="article-more-link">
-            <a href="/2015/04/17/markdown-gramma/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.sarielhu.tk/2015/04/17/markdown-gramma/" data-id="ci8xuw0uo0001pyuauju6brll" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/17/hello-world/" class="article-date">
-  <time datetime="2015-04-17T11:22:11.677Z" itemprop="datePublished">2015-04-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-	
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.sarielhu.tk/2015/04/17/hello-world/" data-id="ci8xuw0vk0007pyuatw1dvlsg" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-  
 </section>
         
           <aside id="sidebar">
