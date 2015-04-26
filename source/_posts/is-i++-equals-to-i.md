@@ -1,5 +1,5 @@
 title: "i++ == i?"
-date: 2015-04-19 15:30:59
+date: 2015-04-26 10:51:59
 tags:
 - "碎片"
 - "JAVA"
@@ -15,7 +15,7 @@ tags:
 	while(i<arr.length){
 		arr[i++] = tmp[i];
 	}
-
+<!-- more -->
 导致了数组越界异常，当时觉得很奇怪，以前上课的时候老师不是说i++的意思就是执行完当前操作再自增吗？这样的话`arr[i++] = tmp[i]`和`arr[i] = tmp[i++]`不是应该等价的吗？而且等号的计算不是应该先算右边的嘛？当时就凌乱了，于是去oracle官网翻了翻官方文档，发现上面是这样写的
 
 >* First, the left-hand operand is evaluated to produce a variable. If this evaluation completes abruptly, then the assignment expression completes abruptly for the same reason; the right-hand operand is not evaluated and no assignment occurs.  
@@ -42,7 +42,7 @@ public class TestIncre {
 ````
 用javap命令来看一下这段代码的字节码
 
-![程序的字节码](/css/image/is-i++-equals-to-i/1.jpg)
+![程序的字节码](/css/images/is-i++-equals-to-i/1.jpg)
 
 其中第5-10行执行的操作顺序为
 
